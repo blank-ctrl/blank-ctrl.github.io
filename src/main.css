@@ -17,6 +17,7 @@ nav {
     background: #0B0C10;
     margin: 0vh;
     padding: 0vh;
+    max-height: 5em;
 }
 
 .nav{
@@ -27,22 +28,28 @@ nav {
 }
 
 .nav :first-child, .nav :nth-child(2), .nav :last-child{
-    padding-inline: 1%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 0px;
+    padding-inline: 0.2vw;
+    font-size: 1.5vw;
     text-align: center;
     color: #66FCF1;
 }
 
 .headline{
-    padding-inline: 123px;
+    margin: 0;
+    padding-inline: 7vw;
+    padding-top: 0vh;
     color: #d4d7e3;
     size-adjust: auto;
 }
 
 .headline :first-child{
-    font-size: 300%;
+    font-size: 2vw;
 }
 
 .headline :last-child{
-    font-size: 130%;
+    font-size: 1vw;
     column-gap: normal;
 }
