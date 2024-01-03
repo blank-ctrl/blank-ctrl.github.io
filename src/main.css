@@ -139,7 +139,7 @@ nav {
 @media screen and (max-width: 600px) {
     .header {
         max-width: 600px;
-        background: rgb(203, 203 , 203);
+        background: rgb(20, 203 , 203);
         margin: 0px;
         padding: 1vh;
     }
@@ -181,7 +181,6 @@ nav {
     .headline :first-child{
         font-size: 200%;
         overflow: auto;
-        overflow: auto;
     }
     
     .headline :last-child{
@@ -194,11 +193,11 @@ nav {
         max-width: 600px;
         min-width: fit-content;
         text-decoration: none;
-        margin-top: 0.5vw;
-        margin-bottom: 0.5vw;
-        padding: 0.5vw;
-        padding-inline: 2vw;
-        font-size: 2vw;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+        padding: 3vw;
+        padding-inline: 5vw;
+        font-size: 200px;
         text-align: center;
         background: #66FCF1;
         box-shadow: 0vw 0vw 0.5vw  hwb(176 58% 0%);
