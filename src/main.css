@@ -24,7 +24,7 @@ nav {
         max-width: 100vw;
         background: rgb(203, 203 , 203);
         margin: 0px;
-        padding: 1vh;
+        padding: 0vh;
     }
     
     .header :first-child{
@@ -42,21 +42,22 @@ nav {
         justify-content: space-between;
     }
     
-    
     .headline{
         margin: 0;
         padding-inline: 7vw;
         padding-top: 0vh;
         color: #d4d7e3;
         size-adjust: auto;
+        max-width: 100vw;
     }
     
     .headline :first-child{
-        font-size: 2vw;
+        font-size: 300%;
     }
     
     .headline :last-child{
-        font-size: 1vw;
+        max-width: 80vw;
+        font-size: 150%;
         column-gap: normal;
     }
     
@@ -172,7 +173,6 @@ nav {
         justify-content: space-between;
     }
     
-    
     .headline{
         margin: 0;
         padding-left: 3vw;
@@ -189,7 +189,7 @@ nav {
     }
     
     .headline :last-child{
-        font-size: 150%;
+        font-size: 100%;
         max-width: 80vw;
         overflow: auto;
     }
