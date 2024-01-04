@@ -175,7 +175,7 @@ nav {
     
     .headline{
         margin: 0;
-        padding-left: 3vw;
+        padding-left: 5vw;
         padding-top: 0vh;
         color: #d4d7e3;
         size-adjust: auto;
@@ -190,7 +190,7 @@ nav {
     
     .headline :last-child{
         font-size: 100%;
-        max-width: 80vw;
+        max-width: 90vw;
         overflow: auto;
     }
     
@@ -267,6 +267,10 @@ nav {
     
     .btn2:disabled, .btn1:disabled {
         cursor: default;
+    }
+
+    .btn1:disabled .content{
+        display: none;
     }
     
     .btn2:active, .btn1:disabled {
