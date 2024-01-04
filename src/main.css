@@ -179,6 +179,7 @@ nav {
         color: #d4d7e3;
         size-adjust: auto;
         overflow: auto;
+        max-width: 100vw;
     }
     
     .headline :first-child{
