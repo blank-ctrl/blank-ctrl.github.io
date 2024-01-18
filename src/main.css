@@ -169,7 +169,7 @@ nav {
     }
 }
 
-@media (hover:none) {
+@media screen and (max-width: 900px) {
     .header {
         max-width: 100vw;
         background: rgb(63, 96, 96);
