@@ -55,7 +55,7 @@ nav {
         font-size: 300%;
     }
     
-    .headline :last-child{
+    .headline :last-child, .headline :nth-child(2), .headline :nth-child(3), .headline :nth-child(4){
         max-width: 80vw;
         font-size: 150%;
         column-gap: normal;
@@ -139,17 +139,46 @@ nav {
         background: #2ce460;
         box-shadow: 0vw 0vw 0.5vw  #2ce460;
     }   
+
+    .projects {
+        color: #d4d7e3;
+        size-adjust: auto;
+        max-width: 100vw;
+    }
+
+    .projects :first-child {
+        font-size: 300%;
+        background: #1d232e;
+        text-align: center;
+        padding: 0.5dvw;
+    }
+
+    .TOAST{
+        max-width: 100dvw;
+        margin: 0px;
+        padding: 0vh;
+    }
+
+    .TOAST :first-child {
+        font-size: 200%;
+        overflow: auto;
+        color: #d4d7e3;
+        text-decoration: underline;
+        text-align: left;
+        padding-inline: 7dvw;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .header {
         max-width: 100vw;
-        background: rgb(213, 242, 242);
+        background: rgb(63, 96, 96);
         margin: 0px;
         padding: 0vh;
     }
     
     .header :first-child{
+        color: #eef0f6;
         max-width: 100vw;
         margin: 0px;
         display: flex;
@@ -188,7 +217,7 @@ nav {
         overflow: auto;
     }
     
-    .headline :last-child{
+    .headline :last-child, .headline :nth-child(2), .headline :nth-child(3), .headline :nth-child(4){
         font-size: 100%;
         max-width: 90vw;
         overflow: auto;
@@ -202,7 +231,7 @@ nav {
         margin-bottom: 0vh;
         padding: 0vh;
         padding-inline: 3vw;
-        font-size: 5vw;
+        font-size: 3.4dvw;
         line-height: 200%;
         text-align: center;
         background: #66FCF1;
@@ -276,5 +305,34 @@ nav {
     .btn2:active, .btn1:disabled {
         background: #2ce460;
         box-shadow: rgba(46, 255, 95, 0.66) 0 1px 0 inset;
+    }
+
+    .projects {
+        max-width: 100vw;
+        margin: 0px;
+        padding: 0vh;
+    }
+
+    .projects :first-child {
+        color:#d4d7e3;
+        background: #1d232e;
+        font-size: 200%;
+        overflow: auto;
+        text-align: center;
+    }
+
+    .TOAST{
+        max-width: 100dvw;
+        margin: 0px;
+        padding: 0vh;
+    }
+
+    .TOAST :first-child {
+        font-size: 140%;
+        overflow: auto;
+        color: #d4d7e3;
+        text-decoration: underline;
+        text-align: left;
+        padding-inline: 4dvw;
     }
 } 
