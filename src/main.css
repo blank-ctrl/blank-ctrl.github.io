@@ -9,46 +9,72 @@ html{
 
 body{
     background: #1F2833;
-    margin: 0vh;
-    padding: 0vh;
+    margin: 0px;
+    padding: 0px;
 }
 nav {
     background: #0B0C10;
-    margin: 0vh;
-    padding: 0vh;
+    margin: 0px;
+    padding: 0px;
     max-height: max-content;
+    max-width: 100dvw;
 }
 
-@media (pointer: fine) {
-    .header {
-        max-width: 100vw;
-        background: rgb(203, 203 , 203);
-        margin: 0px;
-        padding: 0vh;
-    }
-    
-    .header :first-child{
-        max-width: 100vw;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nav{
-        max-height: max-content;
-        margin: 0px;
-        padding: inherit;
-        display: flex;
-        justify-content: space-between;
-    }
-    
+.header {
+    background: rgb(203, 203 , 203);
+    max-width: 100dvw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header :first-child{
+    max-width: 100dvw;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    max-width: 100dvw;
+    max-height: max-content;
+    width: 100dvw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline {
+    margin: 0px;
+    padding-top: 0px;
+    color: #d4d7e3;
+    size-adjust: auto;
+    max-width: 100dvw;
+}
+
+.btn2, .btn1 {
+    min-width: fit-content;
+    text-decoration: none;
+    touch-action: manipulation;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    background: #66FCF1;
+    box-shadow: 0dvw 0dvw 0.2dvw  hwb(176 58% 0%);
+    border: 0.01vw solid rgba(27, 31, 35, .15);
+    border-radius: 0px;
+    font-weight: 600;
+    color: #0B0C10;
+    z-index: 0;
+    font-family: Roboto, system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Oxygen, 
+    Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+@media (pointer: fine) {    
     .headline{
-        margin: 0;
-        padding-inline: 7vw;
-        padding-top: 0vh;
-        color: #d4d7e3;
-        size-adjust: auto;
-        max-width: 100vw;
+        padding-inline: 7dvw;
     }
     
     .headline :first-child{
@@ -56,34 +82,17 @@ nav {
     }
     
     .headline :last-child, .headline :nth-child(2), .headline :nth-child(3), .headline :nth-child(4){
-        max-width: 80vw;
+        max-width: 80dvw;
         font-size: 150%;
         column-gap: normal;
     }
     
     .btn2, .btn1 {
-        min-width: fit-content;
-        text-decoration: none;
-        margin-top: 0vh;
-        margin-bottom: 0vh;
-        padding: 0.5vw;
-        padding-inline: 2vw;
-        font-size: 2dvh;
-        text-align: center;
-        background: #66FCF1;
-        box-shadow: 0vw 0vw 0.2vw  hwb(176 58% 0%);
-        border: 0.01vw solid rgba(27, 31, 35, .15);
-        border-radius: 0px;
+        padding: 0.5dvw;
+        padding-inline: 2dvw;
+        font-size: 2rem;
         cursor: pointer;
-        font-family: Roboto, system-ui, -apple-system, 
-                     BlinkMacSystemFont, 'Segoe UI', Oxygen, 
-                     Ubuntu, Cantarell, 'Open Sans', 
-                     'Helvetica Neue', sans-serif;
         font-size: 1.5rem;
-        font-weight: 600;
-        touch-action: manipulation;
-        color: #0B0C10;
-        z-index: 0;
     }
     
     .content{
@@ -170,46 +179,10 @@ nav {
 }
 
 @media (pointer: coarse) {
-    .header {
-        max-width: 100vw;
-        background: rgb(63, 96, 96);
-        margin: 0px;
-        padding: 0vh;
-    }
-    
-    .header :first-child{
-        color: #eef0f6;
-        max-width: 100vw;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    nav {
-        max-width: 100vw;
-        background: #0B0C10;
-        margin: 0vh;
-        padding: 0vh;
-        max-height: max-content;
-    }
-    
-    .nav{
-        max-width: 100vw;
-        max-height: max-content;
-        width: 100vw;
-        margin: 0px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
     .headline{
-        margin: 0;
-        padding-left: 5vw;
-        padding-top: 0vh;
-        color: #d4d7e3;
-        size-adjust: auto;
+        padding-left: 5dvw;
+        padding-top: 0px;
         overflow: auto;
-        max-width: 100vw;
     }
     
     .headline :first-child{
@@ -219,34 +192,16 @@ nav {
     
     .headline :last-child, .headline :nth-child(2), .headline :nth-child(3), .headline :nth-child(4){
         font-size: 100%;
-        max-width: 90vw;
+        max-width: 90dvw;
         overflow: auto;
     }
     
     .btn2, .btn1 {
-        max-width: 100vw;
-        min-width: fit-content;
-        text-decoration: none;
-        margin-top: 0vh;
-        margin-bottom: 0vh;
-        padding: 0vh;
-        padding-inline: 3vw;
+        padding: 0px;
+        padding-inline: 3dvw;
         font-size: 1.5rem;
         line-height: 200%;
-        text-align: center;
-        background: #66FCF1;
-        box-shadow: 0vw 0vw 0.2vw  hwb(176 58% 0%);
-        border: 0.01vw solid rgba(27, 31, 35, .15);
-        border-radius: 0px;
         cursor: pointer;
-        font-family: Roboto, system-ui, -apple-system, 
-                     BlinkMacSystemFont, 'Segoe UI', Oxygen, 
-                     Ubuntu, Cantarell, 'Open Sans', 
-                     'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        touch-action: manipulation;
-        color: #0B0C10;
-        z-index: 0;
     }
     
     .content{
